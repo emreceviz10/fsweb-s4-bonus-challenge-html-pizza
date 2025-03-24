@@ -111,7 +111,7 @@ nav {
 }
 
 .content {
-  height: 90vh;
+  /* height: 90vh; */
   background-color: var(--color-beige);
   display: flex;
   flex-direction: column;
@@ -263,6 +263,11 @@ nav {
   height: 2.5rem;
 }
 
+.selected {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+}
+
 .pill-text {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
@@ -277,7 +282,7 @@ nav {
   justify-content: space-between;
   width: 50%;
   gap: 2rem;
-  margin-top: 2rem;
+  margin: 2rem 0 5rem 0;
 }
 
 .item {
@@ -363,10 +368,12 @@ footer {
   height: 1.5rem;
 }
 
-/* .footer-left div {
-  display: flex;
-  flex-direction: column;
-} */
+.footer-contact-info {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .footer-address,
 .footer-email,
@@ -440,4 +447,146 @@ footer {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 1rem;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .nav-card {
+    padding: 0.5rem;
+  }
+
+  .nav-card a {
+    font-size: 1rem;
+  }
+
+  .nav-card img {
+    width: 2rem;
+  }
+
+  .firsat {
+    display: none;
+  }
+
+  .featured {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #tagline {
+    font-size: 5.2rem;
+    color: var(--color-beige);
+    margin: 0 2rem;
+    padding: 0 2rem;
+  }
+
+  .pills {
+    flex-wrap: wrap;
+    width: 45%;
+  }
+  .cards {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+    margin: 2rem auto 5rem auto;
+    justify-content: center;
+  }
+
+  .item {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .card-rating,
+  .card-weight {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-price {
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding: 3rem;
+    margin: 1rem;
+    width: 70%;
+  }
+
+  .footer-left {
+    gap: 0.5rem;
+  }
+
+  .footer-logo {
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .footer-contact-info {
+    font-size: 1rem;
+  }
+
+  .footer-left-icon {
+    aspect-ratio: 1 / 1;
+    width: 1rem;
+  }
+
+  .footer-middle {
+    gap: 0.5rem;
+  }
+
+  .footer-list {
+    font-size: 1rem;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-right {
+    max-width: 90%;
+  }
+
+  .footer-insta {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .footer-insta img {
+    width: 30%;
+  }
 }
