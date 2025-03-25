@@ -217,14 +217,12 @@ nav {
   background-image: url("./public/assets/iteration-2/cta/kart-2.png");
   background-size: cover;
   background-position: center;
-  /* padding: 0.5rem; */
 }
 
 .featured-small-bottom {
   background-image: url("./public/assets/iteration-2/cta/kart-3.png");
   background-size: cover;
   background-position: center;
-  /* padding: 0.5rem; */
 }
 
 .featured-title-small {
@@ -327,6 +325,11 @@ nav {
   display: flex;
   flex-direction: column;
   align-content: center;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.1);
 }
 
 .item img {
@@ -338,7 +341,7 @@ nav {
   font-family: "Barlow", sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: 0;
   margin-top: 1.5rem;
@@ -451,7 +454,7 @@ footer {
 
 .footer-list li:hover {
   cursor: pointer;
-  color: --;
+  color: var(--color-yellow);
 }
 
 .footer-title {
